@@ -1,6 +1,7 @@
 import re
 
-class stringa:
+
+class Stringa:
     def __init__(self):
         self.somma = 0
         self.parametri = ""
