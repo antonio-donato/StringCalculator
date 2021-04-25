@@ -26,3 +26,7 @@ class TestAll(unittest.TestCase):
     def test_a_capo_alla_fine(self):
         parola = exec.Stringa()
         self.assertFalse(parola.add("4,6,7,1,10,21,\n"))
+
+    def test_cambio_delimitatore(self):
+        parola = exec.Stringa()
+        self.assertTrue((parola.add("\\;\n1;2") == 3))
